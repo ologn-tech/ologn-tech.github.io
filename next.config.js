@@ -5,7 +5,9 @@ const nextConfig = {
     assetPrefix: '/',
     trailingSlash: true,
     images: {
-        unoptimized: true
+        unoptimized: true,
+        loader: 'imgix',
+        path: '/',
     },
 };
 
