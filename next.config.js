@@ -2,7 +2,7 @@
 const nextConfig = {
     output: "export",
     basePath: '',
-    assetPrefix: '/ologn-tech.github.io/',
+    assetPrefix: '/',
     trailingSlash: true,
     images: {
         unoptimized: true,
