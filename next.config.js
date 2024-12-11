@@ -2,7 +2,10 @@
 const nextConfig = {
     output: "export",
     basePath: "/ologn-tech.github.io",
-    trailingSlash: "true",
+    trailingSlash: true,
+    images: {
+        unoptimized: true
+    },
 };
 
 module.exports = nextConfig;
