@@ -7,11 +7,7 @@ const nextConfig = {
     images: {
         unoptimized: true,
         loader: 'imgix',
-        path: '/',
-    },
-    webpack(config) {
-        config.output.publicPath = '/ologn-tech.github.io/';
-        return config;
+        path: '/images/',
     }
 };
 
