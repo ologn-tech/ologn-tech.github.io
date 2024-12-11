@@ -9,6 +9,10 @@ const nextConfig = {
         loader: 'imgix',
         path: '/',
     },
+    webpack(config) {
+        config.output.publicPath = '/ologn-tech.github.io/';
+        return config;
+    }
 };
 
 module.exports = nextConfig;
