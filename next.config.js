@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: "export",
-    basePath: '',
-    assetPrefix: '/',
+    basePath: '/ologn-tech.github.io',
+    assetPrefix: '/ologn-tech.github.io/',
     trailingSlash: true,
     images: {
         unoptimized: true
