@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aurora II - Wearable Eye Tracking Solution</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+  <!-- Main CSS File -->
+  <link href="/assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Custom CSS */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .navbar-custom {
+      background: linear-gradient(to right, #333, #444);
+    }
+    .hero {
+      height: 100vh;
+      background: url('https://www.weareconflux.com/wp-content/uploads/2022/08/eye-tracking-2.png') no-repeat center center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+      margin-top: 80px;
+    }
+    .section-dark {
+      background-color: #1c1c1c;
+      color: #fff;
+      padding: 60px 0;
+    }
+    .section-black {
+      background-color: #000;
+      color: #fff;
+      padding: 60px 0;
+    }
+    .swiper-slide {
+      background-color: #1c1c1c;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+    .newsletter input {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .newsletter button {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      background-color: #ffc451;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="https://ologn.tech/assets/img/logo.png" alt="O-logn-tech" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link text-warning" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </div>
+        <a href="#" class="btn btn-outline-warning">Get Started</a>
+      </div>
+    </div>
+  </nav> -->
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="#" class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="/assets/img/logo.png" alt="">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#about">Get Started</a>
+
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="display-3">Aurora II: Wearable Eye Tracking Solution</h1>
+      <p class="lead">A compact and powerful eye-tracking solution designed for various applications.</p>
+    </div>
+  </section>
+
+  <!-- Robust, Resilient, Reliable Section -->
+  <section class="section-dark">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <i class="fa-solid fa-location-dot fa-2x"></i>
+          <h5 class="mt-3 fw-bold text-white">Robust</h5>
+          <p>Robustness Performance with Diverse Eye Shapes and Eye Colors</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <i class="fa-solid fa-headset fa-2x"></i>
+          <h5 class="mt-3 fw-bold text-white">Resilient</h5>
+          <p>Automatic Slippage Compensation for Wearable Devices and Remounting Cases</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <i class="fa-solid fa-house fa-2x"></i>
+          <h5 class="mt-3 fw-bold text-white">Reliable</h5>
+          <p>Reliable Tracking Result across Varying Environmental Conditions</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Slider Section -->
+  <section class="section-dark">
+    <div class="container">
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <h4 class="text-white">Ganzin Aurora IIS NPU Solution</h4>
+            <img src="https://gaming.tobii.com/wp-content/uploads/2020/05/product-image-tobii-eye-tracker-5.png" alt="Product Image" class="img-fluid my-3" style="max-height:300px; object-fit:contain;">
+            <p>• Edge AI NPU - Eye Tracking Processor</p>
+            <p>• Standalone Embedded NPU - Computation Process on Edge</p>
+            <p>• Low Power Consumption - Optimized Module and System</p>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <h4 class="text-white">Ganzin Aurora IIS NPU Solution</h4>
+            <img src="https://gaming.tobii.com/wp-content/uploads/2020/05/product-image-tobii-eye-tracker-5.png" alt="Product Image" class="img-fluid my-3" style="max-height:300px; object-fit:contain;">
+            <p>• Edge AI NPU - Eye Tracking Processor</p>
+            <p>• Standalone Embedded NPU - Computation Process on Edge</p>
+            <p>• Low Power Consumption - Optimized Module and System</p>
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <h4 class="text-white">Ganzin Aurora IIS NPU Solution</h4>
+            <img src="https://gaming.tobii.com/wp-content/uploads/2020/05/product-image-tobii-eye-tracker-5.png" alt="Product Image" class="img-fluid my-3" style="max-height:300px; object-fit:contain;">
+            <p>• Edge AI NPU - Eye Tracking Processor</p>
+            <p>• Standalone Embedded NPU - Computation Process on Edge</p>
+            <p>• Low Power Consumption - Optimized Module and System</p>
+          </div>
+        </div>
+        <!-- Navigation buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Demo Section -->
+  <section class="section-black">
+    <div class="container">
+      <div class="ratio ratio-16x9 rounded">
+        <iframe src="https://www.youtube.com/" title="Demo Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fields of Use Section -->
+  <section class="section-dark">
+    <div class="container text-center">
+      <h2 class="mb-5 text-white">Fields of Use</h2>
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <i class="fa-solid fa-location-dot fa-2x"></i>
+          <h6 class="mt-3 fw-bold text-white">Entertainment</h6>
+        </div>
+        <div class="col-md-3 mb-4">
+          <i class="fa-solid fa-headset fa-2x"></i>
+          <h6 class="mt-3 fw-bold text-white">Construction</h6>
+        </div>
+        <div class="col-md-3 mb-4">
+          <i class="fa-solid fa-house fa-2x"></i>
+          <h6 class="mt-3 fw-bold text-white">Manufacturing</h6>
+        </div>
+        <div class="col-md-3 mb-4">
+          <i class="fa-solid fa-house-chimney-medical fa-2x"></i>
+          <h6 class="mt-3 fw-bold text-white">Medical</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Applications Section -->
+  <section class="section-dark">
+    <div class="container">
+      <h2 class="text-center mb-4 text-white">Applications</h2>
+      <p class="text-center mb-5">Unlock Potential of Your XR Devices with Eye Tracking</p>
+      <div class="row">
+        <!-- Application 1 -->
+        <div class="col-md-4 mb-4 text-center">
+          <img src="https://ologn.tech/assets/img/features-bg.jpg" alt="Intuitively Select by Looking" class="img-fluid rounded">
+          <h5 class="mt-3 fw-bold text-white">Intuitively Select by Looking</h5>
+          <p>Next generation HMI enables your interaction using gaze to enhance virtual and physical worlds.</p>
+        </div>
+        <!-- Application 2 -->
+        <div class="col-md-4 mb-4 text-center">
+          <img src="https://ologn.tech/assets/img/about.jpg" alt="Immersive Eye Contact Communication" class="img-fluid rounded">
+          <h5 class="mt-3 fw-bold text-white">Immersive Eye Contact Communication</h5>
+          <p>Capture your expression and communicate seamlessly with others for more engaging interactions.</p>
+        </div>
+        <!-- Application 3 -->
+        <div class="col-md-4 mb-4 text-center">
+          <img src="https://ologn.tech/assets/img/features-bg.jpg" alt="Experience and Performance Optimized" class="img-fluid rounded">
+          <h5 class="mt-3 fw-bold text-white">Experience and Performance Optimized</h5>
+          <p>Leverage your eye-tracking potential to provide users the most comfortable and efficient experience.</p>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="#" class="btn btn-outline-warning">Learn More About the Applications &gt;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6 footer-about">
+            <a href="#" class="logo d-flex align-items-center">
+              <span class="sitename">O(log n)</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>2 Song Hành, Khu đô thị An Phú An Khánh, Quận 2, Hồ Chí Minh</p>
+              <p class="mt-3"><strong>Phone:</strong> <span>+84989992223</span></p>
+              <p><strong>Email:</strong> <span>huy.duong@ologn.tech</span></p>
+            </div>
+            <div class="social-links d-flex mt-4">
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+              <a href="https://github.com/ologn-tech"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#hero"> Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#about"> About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services"> Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#team"> Team</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#contact"> Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-4 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services"> Embedded Software Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services"> Hardware Design and Prototyping</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services"> System Integration</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services"> Firmware Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services"> Performance Optimization</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services"> Security Solutions</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-12 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+            <form action="https://formspree.io/f/xzzzkoye" method="post" class="php-email-form">
+              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe">
+              </div>
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="container text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">O(log n)</strong> <span>All Rights Reserved</span></p>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a
+            href="https://themewagon.com">ThemeWagon</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    // Initialize Swiper
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 5000,
+      },
+    });
+  </script>
+</body>
+</html>
